@@ -1,0 +1,36 @@
+{
+    "name": "Download with Leech",
+    "version": "1.0",
+    "description": "Add option to download links with Leech.",
+    "icons": {
+        "32": "logo/leech-32.png",
+        "64": "logo/leech-64.png"
+    },
+    "developer": {
+        "name": "Martijn van der Ven",
+        "url": "https://vanderven.se/martijn/"
+    },
+    "background": {
+        "scripts": [
+            "src/background.js"
+        ],
+        "persistent": true
+    },
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["src/foreground.js"]
+        }
+      ],
+    "manifest_version": 2,
+    "applications": {
+        "gecko": {
+            "id": "download_w_leech@zegnat.net"
+        }
+    },
+    "permissions": [
+        "<all_urls>",
+        "contextMenus",
+        "nativeMessaging"
+    ]
+}

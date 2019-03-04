@@ -1,0 +1,9 @@
+{
+    "name": "leech_proxy",
+    "description": "Proxy for talking to Leech with AppleScript from a browser.",
+    "path": "/path/to/leech_proxy.php",
+    "type": "stdio",
+    "allowed_extensions": [
+        "download_w_leech@zegnat.net"
+    ]
+}
